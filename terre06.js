@@ -5,5 +5,5 @@
  
  let mirroir = phrase.split("").reverse().join(" ");
  
- //console.log(mirroir);
+ 
 
