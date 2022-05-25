@@ -1,8 +1,8 @@
 // Nom du programme
 
-const urlData = window.location.href;
+let url = "http://127.0.0.1:5500/terre01.js";
 
-let fileName = urlData.substring(urlData.lastIndexOf("/") + 1);
 
-//console.log(fileName);
-//console.log(urlData);
+let fichier = url.split(/(\\|\/)/g).pop();
+
+console.log(fichier);
