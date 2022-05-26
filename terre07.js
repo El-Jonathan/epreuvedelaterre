@@ -1,6 +1,7 @@
-// "programme qui affiche le nombre d'argument passé"
+// "taille d'une chaine"
 
-let phrase = "J'aime le code"
-let taille = phrase.length;
+let phrs = "J'aime le code" 
+let aff = phrs.length;
 
-console.log(taille);
+
+console.log(aff);

@@ -1,17 +1,17 @@
-// l'alphabet à partir de 
+// afficher à partir de 
 
 //let alphabet = [a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,w,x,y,z];
 
-
 let alphabet = "abcdefghijklmnopqrstuvwxyz";
 
-console.log(alphabet);
+let lettre = "h";
 
-let afficheur = alphabet.slice(2);
+let arg = alphabet.indexOf(lettre);
 
-  
-for(let i =0; i<1; i++){
-    console.log(afficheur + `\n`)
-  }
-  
+let affiche = alphabet.slice(arg);
 
+
+  console.log(lettre + '\n' + affiche + '\n');
+
+
+//console.log(lettre + '\n' + affiche);

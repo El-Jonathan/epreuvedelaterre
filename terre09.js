@@ -1,6 +1,14 @@
 // Racine carrée d'un nombre 
+// puissance x = y alors y2 = x
 
-const nombre = 9;
-const racine = nombre.sqrt(nombre);
+let nombre = 345;
+let carrée = nombre / 2;
+let resultOf = carrée;
 
-console.log(`La racine carrée de ${nombre} est ${racine}`);
+do {
+    resultOf = carrée;
+    carrée = (resultOf+(nombre/resultOf))/2;
+
+} while ((resultOf-carrée)!=0);
+
+console.log("le carrée est" + " " + carrée);
