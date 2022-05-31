@@ -1,15 +1,34 @@
 // liste triée
 
-let chffr = [1,2,3,4];
-console.log(chffr);
+var liste = [1,2,3,4,5,6];
+console.log(liste);
 
-//let i = 0;
+for (var i =0; i < liste.length; i++){
 
-for (let i =0; i < chffr.length; i ++){
+  for(var j = i + 1;j < liste.length;j++){
+
     
-    if(chffr[i] > i)
+if (liste[j] >= liste[i]){
+    console.log("triée");break;
 
-  console.log(" pas triée"); 
-} else { 
-    console.log("triée");
-};
+} if(liste[j] < liste[i]){
+    console.log("pas triée");break;
+
+}
+   }
+}
+
+
+    
+
+
+
+
+        
+        
+
+
+
+    
+       
+    

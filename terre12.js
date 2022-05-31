@@ -1,8 +1,27 @@
 // 12h to 24h
 
-var heure = "24:00:00";
-var H = +heure.substr(0, 2);
-let h = H % 12 || 12;
-var ampm = (H < 12 || H === 24) ? "AM" : "PM";
-heure = h + heure.substr(2, 3) + ampm;
-console.log(heure)
+const convertTime12to24 = (time12h) => {
+    const [time, modifier] = time12h.split(' ');
+  
+    let [hours, minutes] = time.split(':');
+  
+  
+    if (modifier === 'PM') {
+      hours = parseInt(hours, 10) + 12;
+    }
+  
+    if (hours === '12'){
+        console.log("midi");
+    
+    } if (hours === 24){
+        console.log("minuit");
+    }
+    
+
+    return `${hours}:${minutes} h`;
+
+    
+} 
+
+console.log(convertTime12to24("12:00 AM"))
+  
