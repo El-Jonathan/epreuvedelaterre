@@ -1,24 +1,31 @@
 // liste triée
 
-var liste = [1,2,3,4,5,6];
-console.log(liste);
-
-for (var i =0; i < liste.length; i++){
-
-  for(var j = i + 1;j < liste.length;j++){
-
-    
-if (liste[j] >= liste[i]){
-    console.log("triée");break;
-
-} if(liste[j] < liste[i]){
-    console.log("pas triée");break;
-
-}
-   }
-}
-
-
+function bubbleSort(array) {
+    var done = false;
+    while (!done) {
+      done = true;
+      
+      
+      for (var i = 1; i < array.length; i += 1) {
+        
+        if (array[i - 1] > array[i]) {
+          done = false;
+          console.log("pas triée");
+          return false;
+        }
+       
+        }
+      
+    }
+    done = true;
+    console.log("triée");
+    return true;
+  
+  }
+  
+  var numbers = [130, 132, 150, 160];
+  bubbleSort(numbers);
+  console.log(numbers);
     
 
 

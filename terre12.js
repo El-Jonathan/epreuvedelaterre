@@ -12,10 +12,13 @@ const convertTime12to24 = (time12h) => {
   
     if (hours === '12'){
         console.log("midi");
+        return ;
     
     } if (hours === 24){
         console.log("minuit");
-    }
+        return;
+
+    } 
     
 
     return `${hours}:${minutes} h`;
@@ -23,5 +26,5 @@ const convertTime12to24 = (time12h) => {
     
 } 
 
-console.log(convertTime12to24("12:00 AM"))
+console.log(convertTime12to24("12:00 AM"));
   

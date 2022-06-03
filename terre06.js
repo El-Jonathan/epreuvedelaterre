@@ -1,8 +1,11 @@
 // Inverser une chaine
  
-let mots = "J'aime le code";
-let taille = phrase.length; 
+let mots = "J'aime le code et la bouffe";
 
-let mirroir = phrase.split("").reverse().join(" ");
+let taille = mots.length; 
+
+let mirroir = mots.split("").reverse().join(" ");
 
 console.log(mirroir);
+
+

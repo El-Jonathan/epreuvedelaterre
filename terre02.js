@@ -1,6 +1,6 @@
 // afficheur d'arguments 
 
-let phrase = "J'aime le code et le basket";
+let phrase = "J'aime le code";
 
 let afficheur = phrase.split(" ");
 
@@ -15,3 +15,5 @@ for(i=0; i<phrase.length; i++){
 
    
 }
+
+
