@@ -1,12 +1,12 @@
 // affichez le resultat d'une puissance.
 
-const chiffre = 2;
+const chffre = 2;
 const puissance = 3;
 
 let resultat = 1;
 
 for(let i =0; i < puissance; i++){
 
-    resultat = resultat * chiffre;
+    resultat = resultat * chffre;
 }
 console.log(resultat);
