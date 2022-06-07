@@ -2,8 +2,10 @@
 
 alphabet = "abcdefghijklmnopqrstuvwxyz";
 
-for (i = 0; ; i++) {
-  if (alphabet > 1);
-  break;
+let alpha = ""; // "" = vide != de undefined
+
+for (i = 0;i < alphabet.length ; i++) {
+    alpha += alphabet[i]; // += " variable + result "
 }
-console.log(alphabet + "\n");
+
+console.log(alpha);
