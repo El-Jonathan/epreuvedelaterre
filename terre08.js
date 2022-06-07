@@ -1,12 +1,11 @@
 // affichez le resultat d'une puissance.
 
-const chffre = 2;
-const puissance = 3;
+const [node, script, chi, pui] = process.argv 
 
 let resultat = 1;
 
-for(let i =0; i < puissance; i++){
+for(let i =0; i < pui; i++){
 
-    resultat = resultat * chffre;
+    resultat *=  chi; 
 }
 console.log(resultat);
